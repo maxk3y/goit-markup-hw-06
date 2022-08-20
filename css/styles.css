@@ -893,6 +893,10 @@ button:focus {
   fill: #ffffff;
 }
 
+.input-check:focus + .check-text span {
+  border-color: var(--first-color);
+}
+
 /* .check-text::before {
   content: '';
   width: 16px;
