@@ -757,14 +757,23 @@ button:focus {
   right: 10px;
   width: 30px;
   height: 30px;
-  border: 1px solid #909090;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: background-color, color, fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  fill: var(--first-color);
+  outline: none;
 }
 
 .is-hidden {
